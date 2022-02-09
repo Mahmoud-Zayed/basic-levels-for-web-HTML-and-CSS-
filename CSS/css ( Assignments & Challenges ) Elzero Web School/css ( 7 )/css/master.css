@@ -1,0 +1,412 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Assignments For Lessons 65 To 67 */
+/* 1 */
+.one-1 div {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #03a9f4;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.one-1 div::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    position: absolute;
+    transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    z-index: -1;
+}
+.one-1 div::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63;
+    position: absolute;
+    transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    z-index: -2;
+}
+/* 2 */
+.one-2 {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    border: 2px solid #ddd;
+    position: relative;
+}
+.one-2 div {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.7s 0s ease-in-out;
+    -webkit-transition: all 0.7s 0s ease-in-out;
+    -moz-transition: all 0.7s 0s ease-in-out;
+    -ms-transition: all 0.7s 0s ease-in-out;
+    -o-transition: all 0.7s 0s ease-in-out;
+}
+.one-2 div::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e91e63 #e91e63 #e91e63 white;
+    transition: all 0.7s 0s ease-in-out;
+    -webkit-transition: all 0.7s 0s ease-in-out;
+    -moz-transition: all 0.7s 0s ease-in-out;
+    -ms-transition: all 0.7s 0s ease-in-out;
+    -o-transition: all 0.7s 0s ease-in-out;
+    z-index: 3;
+}
+.one-2 div::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #2196f3 white #2196f3 #2196f3;
+    transition: all 0.7s 0.7s ease-in-out;
+    -webkit-transition: all 0.7s 0.7s ease-in-out;
+    -moz-transition: all 0.7s 0.7s ease-in-out;
+    -ms-transition: all 0.7s 0.7s ease-in-out;
+    -o-transition: all 0.7s 0.7s ease-in-out;
+}
+.one-2 div:hover::before,
+.one-2 div:hover::after {
+    transform: rotate(360deg);
+}
+/* Assignments For Lessons 68 To 73 */
+/* 1 */
+.two-1 h1 {
+    width: fit-content;
+    margin: 50px auto;
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #ff5722;
+    position: relative;
+    text-align: center;
+}
+.two-1 h1::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff5722;
+    transform: skew(10deg , 10deg);
+    -webkit-transform: skew(10deg , 10deg);
+    -moz-transform: skew(10deg , 10deg);
+    -ms-transform: skew(10deg , 10deg);
+    -o-transform: skew(10deg , 10deg);
+    z-index: -1;
+}
+.two-1 h1::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff5722;
+    transform: skew(-10deg , -10deg);
+    -webkit-transform: skew(-10deg , -10deg);
+    -moz-transform: skew(-10deg , -10deg);
+    -ms-transform: skew(-10deg , -10deg);
+    -o-transform: skew(-10deg , -10deg);
+    z-index: -2;
+}
+/* 2 */
+.two-2 h1 {
+    margin: 50px auto;
+    width: 150px;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.two-2 h1::before {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    width: 20px;
+    background-color: #009688;
+    transform: skew(30deg, 0deg);
+    -webkit-transform: skew(30deg, 0deg);
+    -moz-transform: skew(30deg, 0deg);
+    -ms-transform: skew(30deg, 0deg);
+    -o-transform: skew(30deg, 0deg);
+    z-index: -1;
+    top: 0;
+    left: -60px;
+}
+.two-2 h1::after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #009688;
+    transform: skew(30deg, 0deg);
+    -webkit-transform: skew(30deg, 0deg);
+    -moz-transform: skew(30deg, 0deg);
+    -ms-transform: skew(30deg, 0deg);
+    -o-transform: skew(30deg, 0deg);
+    z-index: -1;
+    top: 0;
+    left: -30px;
+}
+/* 3 */
+.two-4 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+}
+.two-4 div {
+    width: 200px;
+    height: 200px;
+    background-color: #607d8b;
+    border-bottom: 5px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.two-4 div::before {
+    content: "Leonop";
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+.two-4 div::after {
+    content: "";
+    position: absolute;
+    width: 68%;
+    height: 68%;
+    background-color: black;
+    top: -36%;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    -webkit-transform: translate(-50%) rotate(45deg);
+    -moz-transform: translate(-50%) rotate(45deg);
+    -ms-transform: translate(-50%) rotate(45deg);
+    -o-transform: translate(-50%) rotate(45deg);
+}
+/* 5 */
+.two-5 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+    border: 2px solid #ddd;
+}
+.two-5 div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: #eee;
+    transition: all 1s 0.0s ease-in-out;
+    -webkit-transition: all 1s 0.0s ease-in-out;
+    -moz-transition: all 1s 0.0s ease-in-out;
+    -ms-transition: all 1s 0.0s ease-in-out;
+    -o-transition: all 1s 0.0s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-5 div::before {
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1692fc;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-5 div::after {
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa3664;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-5 div:hover {
+    transform: translate(-50%, -50%) rotateY(180deg);
+    -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+    -moz-transform: translate(-50%, -50%) rotateY(180deg);
+    -ms-transform: translate(-50%, -50%) rotateY(180deg);
+    -o-transform: translate(-50%, -50%) rotateY(180deg);
+}
+/* 6 */
+.two-6 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+    border: 2px solid #ddd;
+}
+.two-6 div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: #eee;
+    transition: all 1s 0.0s ease-in-out;
+    -webkit-transition: all 1s 0.0s ease-in-out;
+    -moz-transition: all 1s 0.0s ease-in-out;
+    -ms-transition: all 1s 0.0s ease-in-out;
+    -o-transition: all 1s 0.0s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-6 div::before {
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1692fc;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    transform: rotateX(-180deg);
+    -webkit-transform: rotatex(-180deg);
+    -moz-transform: rotatex(-180deg);
+    -ms-transform: rotatex(-180deg);
+    -o-transform: rotatex(-180deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-6 div::after {
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa3664;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.two-6 div:hover {
+    transform: translate(-50%, -50%) rotateX(-180deg);
+    -webkit-transform: translate(-50%, -50%) rotatex(-180deg);
+    -moz-transform: translate(-50%, -50%) rotatex(-180deg);
+    -ms-transform: translate(-50%, -50%) rotatex(-180deg);
+    -o-transform: translate(-50%, -50%) rotatex(-180deg);
+}

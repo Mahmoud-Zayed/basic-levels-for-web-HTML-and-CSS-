@@ -1,0 +1,138 @@
+html {
+    font-size: 20px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Assignments For Lessons 13 To 16 */
+/* 1 */
+.parent .child .title {
+    color: red;
+}
+.parent .title {
+    color: blue;
+}
+.parent p,
+div.title {
+    color: green;
+}
+/* 2 */
+.parent-1 {
+    width: 1000px;
+    margin: 60px auto;
+}
+.parent-1 .child {
+    background-color: #a52a2a;
+    color: white;
+    margin: 20px;
+    padding: 20px 30px;
+    font-size: 28px;
+    width: fit-content;
+}
+.parent-1 .child.ch-4 {
+    max-height: 70px;
+}
+/* Assignments For Lessons 17 To 21 */
+/* 1 */
+.elzero-web-school {
+    width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+.elzero-web-school h2 {
+    color: #222;
+    text-transform: capitalize;
+    font-size: 60px;
+    text-shadow: 2px 2px 0px #f00, 4px 4px 0px #080, 6px 6px 0px #00f;
+}
+/* 2 */
+.text {
+    width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 32px;
+}
+.text .one {
+    text-transform: uppercase;
+}
+.text .two {
+    text-transform: capitalize;
+}
+.text .three {
+    text-transform: lowercase;
+}
+/* 3 */
+.lorem {
+    width: 800px;
+    margin: 60px auto;
+    width: 400px;
+    background-color: #eeeeee;
+    padding: 30px;
+    font-size: 18px;
+}
+.lorem.lo-2 {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.lorem.lo-3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 4 */
+a {
+    display: block;
+    width: 250px;
+    margin: 60px auto;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #009688;
+    color: white;
+    padding: 28px 14px;
+    font-size: 40px;
+    text-decoration: none;
+    border-bottom: 20px solid #00514a;
+}
+/* Assignments For Lessons 22 To 26 */
+/* 1 */
+.in {
+    padding: 30px;
+    width: 600px;
+    margin: 60px auto;
+    border: 2px solid #00514a;
+    text-align: center;
+}
+.in p {
+    background-color: #eeeeee;
+    padding: inherit;
+    border: inherit;
+}
+/* 2 */
+.font-f {
+    width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 32px;
+}
+.font-f .font-f-1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.font-f .font-f-2 {
+    font-family: 'Cairo', sans-serif;
+}
+.font-f .font-f-3 {
+    font-family: 'Jomhuria', cursive;
+}
+/* 3 */
+.font-f-2-1 {
+    font-size: 2.5rem;
+}
+.font-f-2-2 {
+    font-size: 2rem;
+}
+.font-f-2-3 {
+    font-size: 1.5rem;
+}

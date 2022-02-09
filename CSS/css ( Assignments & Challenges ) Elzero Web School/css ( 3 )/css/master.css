@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 5000px;
+}
+* {
+    box-sizing: border-box;
+}
+/* Assignments For Lessons 27 To 29 */
+/* 1 */
+.clear {
+    clear: both;
+}
+.parent {
+    width: 1000px;
+    margin: 60px auto;
+    background-color: #eee;
+    padding-top: 15px;
+}
+.parent .child {
+    background-color: #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.parent .child.child-full {
+    margin: 0 15px 15px;
+}
+.parent .child.child-13 {
+    float: left;
+    margin-left: 15px;
+    width: calc((100% - 60px) / 3);
+}
+.parent .child.child-12 {
+    float: left;
+    margin-left: 15px;
+    width: calc((100% - 45px) / 2);
+}
+.parent .child.child-14 {
+    float: left;
+    margin-left: 15px;
+    width: calc((100% - 75px) / 4);
+}
+/* 2 */
+.parent-2 {
+    width: 1000px;
+    margin: 60px auto;
+}
+.parent-2 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #b3b3b3;
+    color: black;
+}
+.parent-2 div.one {
+    background-color: rgb(179 179 179 / 0.1);
+}
+.parent-2 div.two {
+    opacity: 0.1;
+}
+/* Assignments For Lessons 30 To 33 */
+/* 1 */
+.po {
+    width: 1000px;
+    margin: 60px auto;
+    position: relative;
+    height: 500px;
+    
+}
+.po .ch {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%  , -50%);
+    -webkit-transform: translate(-50%  , -50%);
+    -moz-transform: translate(-50%  , -50%);
+    -ms-transform: translate(-50%  , -50%);
+    -o-transform: translate(-50%  , -50%);
+}
+.po .ch .green,
+.po .ch .red,
+.po .ch .blue,
+.po .ch .black {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.po .ch .green {
+    background-color: #009688;
+    left: -20px;
+    top: -20px;
+    z-index: 3;
+}
+.po .ch .red {
+    background-color: #f44336;
+    z-index: 4;
+}
+.po .ch .blue {
+    background-color: #03a9f4;
+    left: -40px;
+    top: -40px;
+    z-index: 2;
+}
+.po .ch .black {
+    background-color: #333333;
+    left: -40px;
+    top: -20px;
+    z-index: 1;
+}
+/* 2 */
+.pa {
+    width: 1000px;
+    margin: 60px auto;
+    padding: 70px 100px;
+}
+.pa div {
+    margin: 10px auto;
+    background-color: #eeeeee;
+    color: #020201;
+    width: 600px;
+    font-size: 20px;
+    font-style: oblique;
+    padding: 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #f44538 #2196f3 #f44538 #2196f3;
+    position: relative;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: 900;
+}
+.pa div span.top-left,
+.pa div span.bottom-left,
+.pa div span.top-right,
+.pa div span.bottom-right {
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 16px;
+    position: absolute;
+}
+.pa div span.top-left {
+    border-right: 4px solid #f44538;
+    left: -26px;
+    top: -20px;
+}
+.pa div span.bottom-left {
+    border-right: 4px solid #f44538;
+    left: -26px;
+    bottom: -20px;
+}
+.pa div span.top-right {
+    border-left: 4px solid #f44538;
+    right: -26px;
+    top: -20px;
+}
+.pa div span.bottom-right {
+    border-left: 4px solid #f44538;
+    right: -26px;
+    bottom: -20px;
+}
+/* 3 */
+.list {
+    width: 1000px;
+    margin: 60px auto;
+}
+.list ul.all {
+    width: 400px;
+    margin: 60px auto;
+    font-size: 22px;
+    padding: 10px;
+}
+.list ul.all .none {
+    list-style: none;
+    margin: 10px;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+.list ul.all ol li, 
+.list ul.all ul.js li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px ;
+}
+.list ul.all ol.ol-2 {
+    list-style: lower-roman;
+}
+.list ul.all ul.js {
+    padding: 10px;
+    margin: 5px ;
+    list-style: circle inside;
+}
+/* 4 */
+.table {
+    width: 1000px;
+    margin: 60px auto;
+}
+.table table {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #2f615c;
+    border-spacing: 1px;
+}
+.table table caption {
+    margin: 10px auto;
+    font-size: 24px;
+}
+.table table tr td {
+    padding: 20px;
+}
+.table table thead {
+    background-color: #404040;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.table table tbody {
+    background-color: #eeeeee;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+.table table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #fff;
+    outline: 2px solid #ddd;
+}
+.table table tbody tr td .btn-1, 
+.table table tbody tr td .btn-2 {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.table table tbody tr td .btn-1 {
+    background-color: #03a9f4;
+    margin-right: 5px;
+}
+.table table tbody tr td .btn-2 {
+    background-color: #e91e63;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Assignments For Lessons 42 To 45 */
+/* 1 */
+.one-1 {
+    width: 800px;
+    margin: 50px auto;
+    border: 2px solid #ddd;
+    padding: 50px 25px;
+}
+.one-1 .parent {
+    width: 600px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #f2f2f4;
+    transition: margin-top 0.5s ease-in-out;
+    -webkit-transition: margin-top 0.5s ease-in-out;
+    -moz-transition: margin-top 0.5s ease-in-out;
+    -ms-transition: margin-top 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out;
+}
+.one-1 .parent:hover {
+    margin-top: 5px;
+}
+.one-1 .parent .child {
+    width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #dededc;
+    transition: margin-top 0.5s 0.5s ease-in-out;
+    -webkit-transition: margin-top 0.5s 0.5s ease-in-out;
+    -moz-transition: margin-top 0.5s 0.5s ease-in-out;
+    -ms-transition: margin-top 0.5s 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s 0.5s ease-in-out;
+}
+.one-1 .parent:hover .child {
+    margin-top: 30px;
+}
+/* 2 */
+.one-2 {
+    width: 800px;
+    margin: 50px auto;
+}
+.one-2 div {
+    background-color: #eeeeee !important;
+    color: #000 !important;
+    width: 400px;
+    margin: 10px auto;
+    border: none !important;
+    font-size: 40px !important;
+    position: relative;
+    font-weight: 580;
+}
+.one-2 div::first-line {
+    visibility: hidden;
+}
+.one-2 div::after {
+    content: "Elzero";
+    position: absolute;
+    margin-left: -50px;
+    left: 200px;
+}
+/* 3 */ 
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} */
+.one-3 {
+    width: 800px;
+    margin: 50px auto;
+}
+.one-3 div {
+    border: 3px solid var(--mainColor, black);
+    padding: var(--mainPadding, 20px);
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--mainColor, red);
+    font-size: 24px;
+}
+/* Assignments For Lessons 46 To 53 */
+h2.f {
+    text-align: center;
+}
+/* 1 */
+.two-1 {
+    width: 1000px;
+    margin: 50px auto;
+}
+.two-1 div {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #eee;
+    color: #ff5722;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 5px 0 0 0 #ff5722, -5px 0 0 0 #03a9f4;
+}
+/* 2 */ 
+.two-2 {
+    width: 1000px;
+    margin: 50px auto; 
+}
+.two-2 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.two-2 .parent div {
+    height: 25px;
+    flex-basis: 31.5%;  
+    /* width: calc(95% / 3); */
+    background-color: #f44336;
+    color: white;
+}
+/* 3 */ 
+.two-3 {
+    width: 1000px;
+    margin: 50px auto; 
+}
+.two-3 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.two-3 .parent div {
+    flex-basis: 31.5%;
+    background-color: #607d8b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-3 .parent .one {
+    order: 6;
+    align-self: flex-end;
+}
+.two-3 .parent .two {
+    order: 5;
+}
+.two-3 .parent .three {
+    order: 2;
+    align-self: flex-start;
+}
+.two-3 .parent .four {
+    order: 3;
+}
+.two-3 .parent .five {
+    order: 4;
+}
+.two-3 .parent .six {
+    order: 1;
+}
+/* 4 */ 
+.two-4 {
+    width: 1000px;
+    margin: 50px auto; 
+}
+.two-4 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.two-4 .parent div {
+    color: white;
+    background-color: #009688;
+    padding: 10px;
+    display: flex;
+    flex-basis: 31.5%;
+    justify-content: center;
+    align-items: center;
+}
+.two-4 .parent .one {
+    align-self: flex-end;
+}
+.two-4 .parent .two {
+    width: 50%;
+}
+.two-4 .parent .three {
+    align-self: flex-end;
+}
+/* 5 */
+.two-5 {
+    width: 1000px;
+    margin: 50px auto;  
+}
+.two-5 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.two-5 .parent div {
+    color: white;
+    padding: 10px;
+    width: 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-5 .parent .one {
+    background-color: #ff9800;
+    order: 2;
+    align-self: flex-start;
+}
+.two-5 .parent .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+.two-5 .parent .three {
+    background-color: #795548;
+    order: 4;
+    align-self: flex-start;
+}
+.two-5 .parent .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+/* 6 */
+:root {
+    --main-padding: 10px;
+    --mian-color: #eee;
+    --main-second-color: #ddd;
+    --main-margin: 10px;
+}
+.two-6 {
+    margin: 50px 0;  
+}
+.two-6 .page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+    background-color: var(--mian-color);
+    padding: var(--main-padding);
+}
+.two-6 .page .header {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--main-margin);
+}
+.two-6 .page .header .logo {
+    background-color: var(--main-second-color);
+    display: flex;
+    padding: var(--main-padding);
+    flex-direction: row;
+    width: 16%;
+    justify-content: center;
+}
+.two-6 .page .header .links {
+    background-color: var(--main-second-color);
+    padding: var(--main-padding);
+    list-style: none;
+    width: 82%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.two-6 .page .header .links li {
+    margin-right: 2%;
+}
+.two-6 .page .main-area {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--main-margin);
+    height: 400px;
+}
+.two-6 .page .main-area .content {
+    width: 68%;
+    background-color: var(--main-second-color);
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-6 .page .main-area .sidebar {
+    width: 30%;
+    background-color: var(--main-second-color);
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-6 .page .footer {
+    background-color: var(--main-second-color);
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+}
