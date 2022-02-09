@@ -1,0 +1,25 @@
+
+
+
+/* Start Global */                            /*
+* {
+	margin: 0;
+	padding: 0;
+	-wobkit-box-sizing: border-box;
+	-noz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial ,Tahoma
+}
+
+ul {
+	list-style: none;
+}
+
+.clearfix {
+	clear: both;
+}                                              */
+/* End Global */
+
