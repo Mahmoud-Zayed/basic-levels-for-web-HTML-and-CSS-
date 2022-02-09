@@ -1,0 +1,63 @@
+.heading {
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 15px;
+}
+.heading h1 {
+    margin: 0;
+    color: white;
+    margin-bottom: 10px;
+}
+.heading p {
+    color: wheat;
+    font-style: italic;
+    font-size: 18px;
+}
+main .info,
+main .client,
+main .skills {
+    margin: 20px 0;
+}
+main .info h2,
+main .client h2,
+main .skills h2 {
+    padding: 10px 0;
+}
+main .info p {
+    padding: 3px 0;
+}
+main .client img {
+    width: 200px;
+    margin-right: 10px;
+}
+main .perant1 {
+    border: 1px solid #000;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+main .table table {
+    width: 100%;
+}
+main .table table,
+main .table table th, 
+main .table table td {
+    border: 1px solid #000;
+}
+main .audio {
+    text-align: center;
+    margin: 30px;
+}
+main .video {
+    text-align: center;
+    margin: 30px;
+}
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 20px;
+}
+footer p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
